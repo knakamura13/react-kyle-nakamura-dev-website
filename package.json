@@ -2,6 +2,12 @@
     "name": "react-kyle-nakamura-dev-website",
     "version": "0.1.0",
     "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "serve": "serve -s build",
+        "build": "react-scripts build",
+        "heroku-postbuild": "npm run build"
+    },
     "dependencies": {
         "express": "^4.17.1",
         "react": "^16.8.6",
@@ -11,14 +17,6 @@
         "react-scripts": "^3.0.1",
         "serve": "^11.3.2",
         "typescript": "^3.5.1"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "serve": "serve -s build",
-        "build": "react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "heroku-postbuild": "npm run build"
     },
     "eslintConfig": {
         "extends": "react-app"
