@@ -9,36 +9,42 @@ import * as Styles from "../constants/Styles";
  *******************/
 
 export default class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+    constructor(props) {
+        super(props);
+        this.state = {};
+    }
 
-  render() {
-    return (
-      <div className="App">
-        <Header title="Template App" />
+    render() {
+        return (
+            <div className="App">
+                <Header title="Kyle App" />
 
-        <MediaQuery minWidth={Desktop.minWidth} maxWidth={Desktop.maxWidth}>
-          <div style={{ ...styles.body.main, ...styles.body.large }}>
-            <label>Hello home screen contents</label>
-          </div>
-        </MediaQuery>
+                <MediaQuery
+                    minWidth={Desktop.minWidth}
+                    maxWidth={Desktop.maxWidth}
+                >
+                    <div style={{ ...styles.body.main, ...styles.body.large }}>
+                        <label>Hello home screen contents</label>
+                    </div>
+                </MediaQuery>
 
-        <MediaQuery minWidth={Tablet.minWidth} maxWidth={Tablet.maxWidth}>
-          <div style={{ ...styles.body.main, ...styles.body.medium }}>
-            <label>Hello home screen contents</label>
-          </div>
-        </MediaQuery>
+                <MediaQuery
+                    minWidth={Tablet.minWidth}
+                    maxWidth={Tablet.maxWidth}
+                >
+                    <div style={{ ...styles.body.main, ...styles.body.medium }}>
+                        <label>Hello home screen contents</label>
+                    </div>
+                </MediaQuery>
 
-        <MediaQuery minWidth={Phone.minWidth} maxWidth={Phone.maxWidth}>
-          <div style={{ ...styles.body.main, ...styles.body.small }}>
-            <label>Hello home screen contents</label>
-          </div>
-        </MediaQuery>
-      </div>
-    );
-  }
+                <MediaQuery minWidth={Phone.minWidth} maxWidth={Phone.maxWidth}>
+                    <div style={{ ...styles.body.main, ...styles.body.small }}>
+                        <label>Hello home screen contents</label>
+                    </div>
+                </MediaQuery>
+            </div>
+        );
+    }
 }
 
 /*************
@@ -46,16 +52,16 @@ export default class Home extends Component {
 **************/
 
 const styles = {
-  body: {
-    main: {
-      height: "100%",
-      width: "100%",
-      margin: "30px 0 0 10px",
-      backgroundColor: Styles.colors.background,
-      fontFamily: Styles.fontFamilies.primary,
-    },
-    large: {},
-    medium: {},
-    small: {},
-  },
+    body: {
+        main: {
+            height: "100%",
+            width: "100%",
+            margin: "30px 0 0 10px",
+            backgroundColor: Styles.colors.background,
+            fontFamily: Styles.fontFamilies.primary
+        },
+        large: {},
+        medium: {},
+        small: {}
+    }
 };
