@@ -1,0 +1,41 @@
+// Colors
+$brick-red: #990000;
+$primary: #6200ee;
+$secondary: #03dac6;
+$background: #ffffff;
+$surface: #ffffff;
+$error: #b00020;
+$on-primary: #ffffff;
+$on-secondary: #000000;
+$on-background: #000000;
+$on-surface: #000000;
+$on-error: #ffffff;
+
+// Fonts
+$font-family: Helvetica, sans-serif;
+$font-size-paragraph: 14px; 
+$font-size-large: 27px;
+
+// Shadows 
+$shadow-box: 0 2px 5px #00000050;
+$shadow-text: 2px 2px 5px #00000050;
+
+body {
+    margin: 0;
+}
+
+.component#header {
+    background: $brick-red;
+    font: {
+        family: $font-family;
+        size: $font-size;
+    }
+    flex: 1 {
+        direction: column;
+    }
+    z-index: 99999;
+    box-shadow: $shadow-box;
+    text-shadow: $shadow-text;
+    text-align: center;
+    justify-content: center;
+}
