@@ -5,7 +5,7 @@ import logo from "../assets/logo-white.png";
 *****************/
 
 /* A top-positioned header view with a logo and title */
-const Header = () => (
+const Header = (props) => (
     <div className="component" id="header">
         <div>
             {/* Logo */}
@@ -15,7 +15,7 @@ const Header = () => (
 
             {/* Page title */}
             <a href="/">
-                {this.props.title}
+                {props.title}
             </a>
         </div>
     </div>
