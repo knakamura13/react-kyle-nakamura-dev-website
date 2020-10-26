@@ -22,6 +22,7 @@ $shadow-text: 2px 2px 5px #00000050;
 
 body {
     margin: 0;
+    background: #333;
 }
 
 .component#header {
@@ -38,4 +39,26 @@ body {
     text-shadow: $shadow-text;
     text-align: center;
     justify-content: center;
+}
+
+.component#home {
+    background: #333;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: {
+        family: $font-family;
+        size: $font-size-paragraph;
+    }
+    label {
+        color: #fff;
+        font: {
+            size: $font-size-large;
+        }
+    }
 }

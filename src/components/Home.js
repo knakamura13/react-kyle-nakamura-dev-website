@@ -5,11 +5,10 @@ import Header from "./Header";
 *****************/
 
 const Home = () => (
-    <div className="App">
-        <Header title="Kyle Nakamura Dev" />
-
+    <div className="component" id="home">
+        {/*<Header title="Kyle Nakamura" />*/}
         <div>
-            <label>Home screen contents</label>
+            <label>new website, who dis?</label>
         </div>
     </div>
 );
