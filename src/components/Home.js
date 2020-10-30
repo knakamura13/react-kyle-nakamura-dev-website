@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 /****************
  Component Class
@@ -9,20 +9,21 @@ const Home = () => {
         [Y, setY] = useState('');
 
     let offset = {
-        transform: `translate(-50%, -50%) perspective(600px)
+        transform: `translate(0, 0) perspective(600px)
                     rotateY(${X}deg)
                     rotateX(${Y}deg)`
     }
 
     useEffect(() => {
-        const friction = 1/32;
+        // Set the friction, a.k.a. movement sensitivity
+        const friction = 1 / 100;
 
         const mouseMove = (e) => {
-            let followX = window.innerWidth / 2 - e.clientX;
-            let followY = window.innerHeight / 2 - e.clientY;
+            let followX = 600 - e.clientX,
+                followY = 600 - e.clientY;
 
-            let x = -followX * friction;
-            let y = followY * friction;
+            let x = -followX * friction,
+                y = followY * friction;
 
             setX(x);
             setY(y);
@@ -39,9 +40,8 @@ const Home = () => {
     return (
         <div className="component" id="home">
             <div className='wrapper' style={offset}>
-                <div className="shape"></div>
-                <div className="shape2"><p>A website by Kyle Nakamura</p></div>
-                <p>new website, who dis?</p>
+                <div className="shape"/>
+                <div className="shape2"></div>
             </div>
         </div>
     );
