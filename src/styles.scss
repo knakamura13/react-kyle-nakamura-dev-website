@@ -48,6 +48,9 @@ body {
     text-shadow: $shadow-text;
     text-align: center;
     justify-content: center;
+    a {
+        color: #fff;
+    }
 }
 
 .component#home {
