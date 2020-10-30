@@ -12,25 +12,33 @@ $on-surface: #000000;
 $on-error: #ffffff;
 
 // Fonts
-$font-family: Helvetica, sans-serif;
-$font-size-paragraph: 14px; 
+$font-family-sans: Helvetica, sans-serif;
+$font-size-paragraph: 14px;
 $font-size-large: 27px;
 
 // Shadows 
 $shadow-box: 0 2px 5px #00000050;
 $shadow-text: 2px 2px 5px #00000050;
 
+/***************
+ Generic styles
+****************/
+
 body {
     margin: 0;
-    background: #333;
+    box-sizing: border-box;
+    background: #f1faee;
+    font-family: $font-family-sans;
+    font-size: $font-size-paragraph;
 }
+
+/*****************
+ Component styles
+******************/
 
 .component#header {
     background: $brick-red;
-    font: {
-        family: $font-family;
-        size: $font-size-paragraph;
-    }
+    font-size: $font-size-paragraph;
     flex: 1 {
         direction: column;
     }
@@ -40,41 +48,10 @@ body {
     text-align: center;
     justify-content: center;
 }
-    
-.component#home.old {
-    background: #333;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font: {
-        family: $font-family;
-        size: $font-size-paragraph;
-    }
-    label {
-        color: #fff;
-        font: {
-            size: $font-size-large;
-        }
-    }
 
-}
-
-//@import url('https://fonts.googleapis.com/css?family=Montserrat')
-body {
-    box-sizing: border-box;
-    background: #f1faee;
-    //font-family: 'Montserrat', sans-serif;
-    font-family: $font-family;
-}
 .component#home {
     width: 100vw;
     height: 100vh;
-
     .wrapper {
         position: absolute;
         top: 50%;
@@ -108,9 +85,6 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            p {
-                
-            }
         }
         p {
             text-align: center;
