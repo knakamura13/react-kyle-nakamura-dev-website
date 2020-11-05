@@ -43,6 +43,10 @@ const Home = () => {
                 <div className="shape"/>
                 <div className="shape2"></div>
             </div>
+
+            <div className="demo4">
+                Kyle Nakamura
+            </div>
         </div>
     );
 };

@@ -94,4 +94,19 @@ body {
             align-items: center;
         }
     }
+    .demo div {
+        width: 400px;
+        height: 65px;
+        line-height: 60px;
+        font-family: "Century Gothic", "Helvetica", sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .demo4 {
+        color: #3B5957;
+        background-color: #5D8D89;
+        text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+    }
 }
