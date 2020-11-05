@@ -16,7 +16,7 @@ const Home = () => {
 
     useEffect(() => {
         // Set the friction, a.k.a. movement sensitivity
-        const friction = 1 / 100;
+        const friction = 1 / 200;
 
         const mouseMove = (e) => {
             let followX = 600 - e.clientX,
@@ -44,8 +44,18 @@ const Home = () => {
                 <div className="shape2"></div>
             </div>
 
-            <div className="demo4">
-                Kyle Nakamura
+            <div id="nav-bar">
+                <a className="engraved nav-item">
+                    Portfolio
+                </a>
+
+                <a className="engraved nav-item">
+                    About
+                </a>
+
+                <a className="engraved nav-item">
+                    Contact
+                </a>
             </div>
         </div>
     );
