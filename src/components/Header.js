@@ -1,4 +1,5 @@
-import logo from "../assets/logo-white.png";
+import React from "react";
+import { FaBeer } from "react-icons/fa";
 
 /****************
  Component Class
@@ -8,10 +9,7 @@ import logo from "../assets/logo-white.png";
 const Header = (props) => (
     <div className="component" id="header">
         <div>
-            {/* Logo */}
-            <a href="/">
-                <img src={logo} alt="Logo"/>
-            </a>
+            <h3> Lets go for a <FaBeer />? </h3>
 
             {/* Page title */}
             <a href="/">
