@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 
+import { Header } from "../components";
+
 /****************
  Component Class
 *****************/
 
 const Home = () => {
-    const [X, setX] = useState(""),
-        [Y, setY] = useState('');
+    const [X, setX] = useState(0),
+        [Y, setY] = useState(0);
 
     let offset = {
         transform: `translate(0, 0) perspective(600px)
@@ -39,24 +41,7 @@ const Home = () => {
 
     return (
         <div className="component" id="home">
-            <div className='wrapper' style={offset}>
-                <div className="shape"/>
-                <div className="shape2"></div>
-            </div>
-
-            <div id="nav-bar">
-                <a className="engraved nav-item">
-                    Portfolio
-                </a>
-
-                <a className="engraved nav-item">
-                    About
-                </a>
-
-                <a className="engraved nav-item">
-                    Contact
-                </a>
-            </div>
+            <Header title="hello"></Header>
         </div>
     );
 };

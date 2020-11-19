@@ -48,9 +48,13 @@ body {
 .component#header {
     background: $brick-red;
     font-size: $font-size-paragraph;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
     z-index: 99999;
-    box-shadow: $shadow-box;
-    text-shadow: $shadow-text;
+    box-shadow: $shadow-box-dark;
     text-align: center;
     justify-content: center;
     flex: 1 {
