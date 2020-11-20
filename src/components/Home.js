@@ -5,8 +5,10 @@ import React, { useState, useEffect } from "react";
 *****************/
 
 const Home = () => {
-    const [X, setX] = useState(""),
-        [Y, setY] = useState('');
+    const [X, setX] = useState(0),
+        [Y, setY] = useState(0),
+        linkedInURL = 'https://linkedin.com/in/kylenakamura',
+        gitHubURL = 'https://github.com/knakamura13';
 
     let offset = {
         transform: `translate(0, 0) perspective(600px)
@@ -45,18 +47,23 @@ const Home = () => {
             </div>
 
             <div id="nav-bar">
-                <a className="engraved nav-item">
+                <a className="engraved nav-item" href={gitHubURL} target="_blank">
                     Portfolio
                 </a>
 
-                <a className="engraved nav-item">
+                <a className="engraved nav-item" href={linkedInURL} target="_blank">
                     About
                 </a>
 
-                <a className="engraved nav-item">
+                <a className="engraved nav-item" href={linkedInURL} target="_blank">
                     Contact
                 </a>
             </div>
+
+            <p className="engraved center" id="home-message">
+                {`This site is a work in progress. \n`}
+                {`Check back later for more information about me!`}
+            </p>
         </div>
     );
 };
