@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:heroku" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="617c3da1-efba-468e-8f4d-a1da5d309e4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jZj4CKeF6FFSCEkmeW4bFznvOB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/screens" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="617c3da1-efba-468e-8f4d-a1da5d309e4f" name="Default Changelist" comment="" />
+      <created>1604018315830</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604018315830</updated>
+      <workItem from="1604018317648" duration="14536000" />
+      <workItem from="1604105544867" duration="30000" />
+      <workItem from="1604566082722" duration="7225000" />
+      <workItem from="1604656943614" duration="1538000" />
+      <workItem from="1607723466204" duration="16638000" />
+      <workItem from="1608029606224" duration="1791000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1443" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608005714029">
+      <screen x="0" y="25" width="2560" height="1055" />
+    </state>
+    <state x="1443" y="358" key="#com.intellij.fileTypes.FileTypeChooser/0.25.2560.1055@0.25.2560.1055" timestamp="1608005714029" />
+    <state x="492" y="310" key="EditFileWatcherDialog" timestamp="1604018629764">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="492" y="310" key="EditFileWatcherDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1604018629764" />
+    <state width="1685" height="287" key="GridCell.Tab.0.bottom" timestamp="1608030798377">
+      <screen x="0" y="25" width="2560" height="1055" />
+    </state>
+    <state width="829" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1604576004354" />
+    <state width="1685" height="287" key="GridCell.Tab.0.bottom/0.25.2560.1055@0.25.2560.1055" timestamp="1608030798377" />
+    <state width="1685" height="287" key="GridCell.Tab.0.center" timestamp="1608030798377">
+      <screen x="0" y="25" width="2560" height="1055" />
+    </state>
+    <state width="829" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1604576004353" />
+    <state width="1685" height="287" key="GridCell.Tab.0.center/0.25.2560.1055@0.25.2560.1055" timestamp="1608030798377" />
+    <state width="1685" height="287" key="GridCell.Tab.0.left" timestamp="1608030798376">
+      <screen x="0" y="25" width="2560" height="1055" />
+    </state>
+    <state width="829" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1604576004352" />
+    <state width="1685" height="287" key="GridCell.Tab.0.left/0.25.2560.1055@0.25.2560.1055" timestamp="1608030798376" />
+    <state width="1685" height="287" key="GridCell.Tab.0.right" timestamp="1608030798377">
+      <screen x="0" y="25" width="2560" height="1055" />
+    </state>
+    <state width="829" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1604576004354" />
+    <state width="1685" height="287" key="GridCell.Tab.0.right/0.25.2560.1055@0.25.2560.1055" timestamp="1608030798377" />
+    <state x="349" y="161" key="SettingsEditor" timestamp="1607723900104">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="349" y="161" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1607723900104" />
+    <state x="1463" y="401" key="cloudConfig.PluginsDialog" timestamp="1608030969578">
+      <screen x="0" y="25" width="2560" height="1055" />
+    </state>
+    <state x="1463" y="401" key="cloudConfig.PluginsDialog/0.25.2560.1055@0.25.2560.1055" timestamp="1608030969578" />
+    <state x="1513" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608001492014">
+      <screen x="0" y="25" width="2560" height="1055" />
+    </state>
+    <state x="1513" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.2560.1055@0.25.2560.1055" timestamp="1608001492014" />
+    <state x="541" y="157" width="598" height="735" key="find.popup" timestamp="1604568100826">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="541" y="157" width="598" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1604568100826" />
+    <state x="640" y="390" key="scopes" timestamp="1604018796379">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="640" y="390" key="scopes/0.0.1680.1050@0.0.1680.1050" timestamp="1604018796379" />
+  </component>
+</project>

@@ -26,7 +26,7 @@ const NavBar = () => {
  */
 const NavItem = props => {
     return (
-        <a className='engraved nav-item' href={props.url} target='_blank'>
+        <a className='engraved nav-item' href={props.url} target='_blank' rel='noreferrer'>
             {props.text}
         </a>
     );
