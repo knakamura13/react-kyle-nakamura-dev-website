@@ -1,71 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React, { useRef } from 'react';
+
+import SearchBar from './SearchBar';
+import NavBar from './NavBar';
 
 /****************
  Component Class
 *****************/
 
+/**
+ *  The home screen component.
+ *
+ *  @returns {JSX.Element}
+ */
 const Home = () => {
-    const [X, setX] = useState(0),
-        [Y, setY] = useState(0),
-        linkedInURL = 'https://linkedin.com/in/kylenakamura',
-        gitHubURL = 'https://github.com/knakamura13';
+    // TODO: Use MobX value instead of hardcoded intent.
+    const hardCodedIntent = '';
 
-    let offset = {
-        transform: `translate(0, 0) perspective(600px)
-                    rotateY(${X}deg)
-                    rotateX(${Y}deg)`
-    }
+    // TODO: Set the response from the MobX AI store.
+    const hardCodedResponse = 'This is the chat bot response';
 
-    useEffect(() => {
-        // Set the friction, a.k.a. movement sensitivity
-        const friction = 1 / 200;
-
-        const mouseMove = (e) => {
-            let followX = 600 - e.clientX,
-                followY = 600 - e.clientY;
-
-            let x = -followX * friction,
-                y = followY * friction;
-
-            setX(x);
-            setY(y);
-        }
-
-        window.addEventListener('mousemove', mouseMove);
-
-        // Returned function will be called on component unmount
-        return () => {
-            window.removeEventListener('mousemove', mouseMove)
-        }
-    }, [])
+    const messageRef = useRef(null);
 
     return (
-        <div className="component" id="home">
-            <div className='wrapper' style={offset}>
-                <div className="shape"/>
-                <div className="shape2"></div>
-            </div>
+        <div className='component' id='home'>
+            <NavBar />
 
-            <div id="nav-bar">
-                <a className="engraved nav-item" href={gitHubURL} target="_blank">
-                    Portfolio
-                </a>
-
-                <a className="engraved nav-item" href={linkedInURL} target="_blank">
-                    About
-                </a>
-
-                <a className="engraved nav-item" href={linkedInURL} target="_blank">
-                    Contact
-                </a>
-            </div>
-
-            <p className="engraved center" id="home-message">
-                {`This site is a work in progress. \n`}
-                {`Check back later for more information about me!`}
-            </p>
+            <SearchBar placeholder='Ask me anything . . .' />
+            {hardCodedIntent ? (
+                <p className='center' id='chat-bot-message' ref={messageRef}>
+                    {hardCodedResponse}
+                </p>
+            ) : (
+                <></>
+            )}
         </div>
     );
 };
-    
+
 export default Home;

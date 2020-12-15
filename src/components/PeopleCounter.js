@@ -1,9 +1,9 @@
-import React,  { useState } from "react";
+import React, { useState } from 'react';
 
-import Header from "./Header";
-import logo from "../assets/logo-black.png";
+import Header from './Header';
+import logo from '../assets/logo-black.png';
 
-import { APIRequest } from '../utils'
+import { APIRequest } from '../utils';
 
 /*******************
  * Component Class *
@@ -30,18 +30,18 @@ const PeopleCounter = () => {
         .catch(err => {});
 
     return (
-        <div id="main">
-            <Header title="Home > Portfolio > People Counter"/>
+        <div id='main'>
+            <Header title='Home > Portfolio > People Counter' />
 
             <div>
                 <div>
                     <label>Before</label>
-                    <img src={logo} alt="before"></img>
+                    <img src={logo} alt='before'></img>
                     <label>{beforeImg || 'BEFORE IMG'}</label>
                 </div>
                 <div>
                     <label>After</label>
-                    <img src={logo} alt="after"></img>
+                    <img src={logo} alt='after'></img>
                     <label>{afterImg || 'AFTER IMG'}</label>
                 </div>
 
@@ -50,7 +50,7 @@ const PeopleCounter = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 };
 
 export default PeopleCounter;
