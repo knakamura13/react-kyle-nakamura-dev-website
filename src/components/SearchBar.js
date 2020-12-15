@@ -1,7 +1,6 @@
 import React from 'react';
 
-// TODO: Use MobX
-// import RootStore from '../stores/RootStore';
+import RootStore from '../stores/RootStore';
 
 /**
  *  A search bar for AI-type user interaction.
@@ -10,7 +9,11 @@ import React from 'react';
  */
 const SearchBar = props => {
     // TODO: Use MobX
-    // const { AIStore } = RootStore;
+    const { AIStore } = RootStore;
+
+    AIStore.getIntent().then((intent) => {
+        console.log(intent);
+    })
 
     const handleQueryChange = e => {
         // Raw text from the text field
