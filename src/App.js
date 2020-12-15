@@ -1,8 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Home from './components/Home';
-import PeopleCounter from './components/PeopleCounter';
-import Error from './components/Error';
+import { Home, PeopleCounter, Error } from './screens';
 
 /****************
  Component Class

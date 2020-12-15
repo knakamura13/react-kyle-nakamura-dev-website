@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 
-import SearchBar from './SearchBar';
-import NavBar from './NavBar';
+import { SearchBar, NavBar } from '../components';
 
 /****************
  Component Class

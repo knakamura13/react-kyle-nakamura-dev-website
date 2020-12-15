@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Header from './Header';
+import { Header } from '../components';
 import logo from '../assets/logo-black.png';
 
 import { APIRequest } from '../utils';
