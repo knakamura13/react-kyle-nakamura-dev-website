@@ -8,31 +8,24 @@ import RootStore from '../stores/RootStore';
  *  @returns {JSX.Element}
  */
 const SearchBar = props => {
-    // TODO: Use MobX
-    const { AIStore } = RootStore;
-
-    AIStore.getIntent().then((intent) => {
-        console.log(intent);
-    })
+    // Instantiate a data store to manage queries and intents
+    const AIStore = new RootStore.AIStore();
 
     const handleQueryChange = e => {
         // Raw text from the text field
         const query = e.target.value;
 
         // Infer the intent of the query
-        // TODO: Use wit.ai to infer the intent
-        if (query.includes('your name')) {
-            // TODO: Use MobX to store the intent
-            //AIStore.setIntent('Introduction');
-        }
+        AIStore.inferIntentForQuery(query).then(intent => {
+            console.log(`New intent calculated: ${intent}`)
+        });
     };
 
     return (
         <input
             className='component'
             id='search-bar'
-            // TODO: Use MobX `AIStore.intent` instead of `true`/`false`
-            style={{ top: true ? '20%' : '50%' }} // position (top) changes when intent is set
+            style={{ top: AIStore.hasIntent() ? '20%' : '50%' }} // position (top) changes when intent is set
             placeholder={props.placeholder}
             autoComplete='off'
             onChange={e => handleQueryChange(e)}

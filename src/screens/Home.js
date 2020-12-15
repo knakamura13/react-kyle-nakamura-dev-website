@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 
 import { SearchBar, NavBar } from '../components';
 
+import RootStore from '../stores/RootStore';
+
 /****************
  Component Class
 *****************/
@@ -11,12 +13,11 @@ import { SearchBar, NavBar } from '../components';
  *
  *  @returns {JSX.Element}
  */
-const Home = () => {
-    // TODO: Use MobX value instead of hardcoded intent.
-    const hardCodedIntent = '';
+const Home = async () => {
+    // Instantiate a data store to manage queries and intents
+    const AIStore = RootStore.AIStore;
 
-    // TODO: Set the response from the MobX AI store.
-    const hardCodedResponse = 'This is the chat bot response';
+    const hardCodedResponse = AIStore.getResponseForIntent(AIStore.intent);
 
     const messageRef = useRef(null);
 
@@ -25,7 +26,7 @@ const Home = () => {
             <NavBar />
 
             <SearchBar placeholder='Ask me anything . . .' />
-            {hardCodedIntent ? (
+            {AIStore.hasIntent ? (
                 <p className='center' id='chat-bot-message' ref={messageRef}>
                     {hardCodedResponse}
                 </p>
