@@ -2,7 +2,7 @@
 $brick-red: #990000;
 $primary: #6200ee;
 $secondary: #03dac6;
-$background: #f1faee;
+$background: #dce2e9;
 $surface: #ffffff;
 $error: #b00020;
 $on-primary: #ffffff;
@@ -98,12 +98,28 @@ a {
     width: 100vw;
     height: 100vh;
 
+    #header-full-name {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        label {
+            @extend a;
+            @extend .engraved;
+            font-size: $font-size-large;
+            line-height: $font-size-large + 8px;
+            &:hover {
+                cursor: default;
+            }
+        }
+    }
+
     #nav-bar {
         position: absolute;
         top: 0;
         right: 0;
         padding: 40px;
         a.nav-item {
+            font-size: $font-size-medium;
             margin-left: 18px;
         }
     }
@@ -113,7 +129,10 @@ a {
         height: 30px;
         width: 50%;
         font-size: $font-size-medium;
+        background: $surface;
         border-radius: 30px;
+        transition: top 0.5s;
+        z-index: 999999;
         &:hover, &:focus {
             border-color: #000;
         }
@@ -121,7 +140,6 @@ a {
             outline: none !important;
             box-shadow: 0 0 8px #37537eaa;
         }
-        transition: top 0.5s;
     }
 
     #ai-response {

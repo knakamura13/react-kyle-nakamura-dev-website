@@ -32,8 +32,6 @@ class AIStore {
     }
 
     infertIntentForQuery = async query => {
-        if (!query) return null;
-
         // Cache the latest query
         this.latestQuery = query;
 
@@ -80,7 +78,8 @@ class AIStore {
                     `JavaScript, React, React-Native, HTML, CSS, PHP, Python, SQL, Swift, Java, C#, Vim, Git, Jest (for JS Testing).`;
                 break;
             case 'tutorial':
-                res = `Ask me any question and I'll answer to the best of my ability! \n` +
+                res =
+                    `Ask me any question and I'll answer to the best of my ability! \n` +
                     `You can ask about things like: \n` +
                     `work \n` +
                     `school \n` +
@@ -90,9 +89,10 @@ class AIStore {
                     `programming languages and skills`;
                 break;
             case 'website_info':
-                res = `This website was built from scratch using React for the front-end and Node.JS + MobX for the back-end.\n` +
-                `The AI/chat bot features are made possible using wit.ai, a minimalistic tool for extracting intent from a text query.\n` +
-                `The site itself is hosted on Heroku and the code can be found on my GitHub profile using the 'Portfolio' link on the top of this page.`;
+                res =
+                    `This website was built from scratch using React for the front-end and Node.JS + MobX for the back-end.\n` +
+                    `The AI/chat bot features are made possible using wit.ai, a minimalistic tool for extracting intent from a text query.\n` +
+                    `The site itself is hosted on Heroku and the code can be found on my GitHub profile using the 'Portfolio' link on the top of this page.`;
                 break;
             case 'work':
                 res = `After I graduated from APU in 2018, I started working full-time at APU as a full-stack software developer.`;
@@ -113,6 +113,8 @@ class AIStore {
 // Helper functions (private)
 
 const witAIRequest = async query => {
+    if (!query) return;
+
     const version = '20201215',
         bearer = process.env.REACT_APP_WIT_AI_BEARER;
 

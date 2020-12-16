@@ -26,7 +26,7 @@ const SearchBar = observer(props => {
             <input
                 className='component'
                 id='search-bar'
-                style={{ top: AIStore.hasIntent ? '25%' : '50%' }} // position (top) changes when intent is set
+                style={{ top: AIStore.hasIntent ? '33%' : '50%' }} // position (top) changes when intent is set
                 placeholder={props.placeholder}
                 autoComplete='off'
                 onChange={e => handleQueryChange(e)}
