@@ -14,6 +14,7 @@ $on-error: #ffffff;
 // Fonts
 $font-family-sans: Helvetica, sans-serif;
 $font-size-paragraph: 14px;
+$font-size-medium: 20px;
 $font-size-large: 27px;
 $font-size-title: 70px;
 
@@ -111,6 +112,7 @@ a {
         @extend .center;
         height: 30px;
         width: 50%;
+        font-size: $font-size-medium;
         border-radius: 30px;
         &:hover, &:focus {
             border-color: #000;
@@ -120,5 +122,11 @@ a {
             box-shadow: 0 0 8px #37537eaa;
         }
         transition: top 0.5s;
+    }
+
+    #ai-response {
+        label {
+            font-size: $font-size-medium;
+        }
     }
 }

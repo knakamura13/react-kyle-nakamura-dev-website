@@ -32,7 +32,7 @@ const SearchBar = observer(props => {
                 onChange={e => handleQueryChange(e)}
             />
             {AIStore.hasIntent && (
-                <div className='center'>
+                <div className='center' id='ai-response'>
                     <label>{AIStore.getResponseForIntent(AIStore.intent)}</label>
                 </div>
             )}
