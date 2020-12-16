@@ -1,5 +1,5 @@
 // Import packages
-import { makeAutoObservable, observable, computed, action } from 'mobx';
+import { makeAutoObservable, computed, action } from 'mobx';
 
 /**
  * 	AIStore
@@ -57,6 +57,8 @@ class AIStore {
         switch (intent.toLowerCase()) {
             case 'introduction':
                 res = 'My name is Kyle Nakamura. Pleasure to meet you!';
+                break;
+            default:
                 break;
         }
 
