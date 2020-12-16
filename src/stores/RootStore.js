@@ -1,5 +1,5 @@
 // Import all other stores
-import AIStore from './AIStore'
+import AIStore from './AIStore';
 
 /**
  * 	RootStore

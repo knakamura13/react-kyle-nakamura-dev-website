@@ -1,5 +1,5 @@
 // Import packages
-import { makeAutoObservable, computed, action } from 'mobx';
+import { makeAutoObservable, observable, computed, action } from 'mobx';
 
 /**
  * 	AIStore
@@ -7,11 +7,16 @@ import { makeAutoObservable, computed, action } from 'mobx';
 class AIStore {
     // Observable properties
     intent = null;
+    latestIntent = null;
+    latestQuery = null;
+    latestResponse = null;
 
     constructor() {
         makeAutoObservable(this, {
             hasIntent: computed,
             setIntent: action,
+            infertIntentForQuery: action,
+            getResponseForIntent: action,
         });
     }
 
@@ -25,23 +30,41 @@ class AIStore {
         this.intent = newIntent;
     }
 
-    getIntent = async () => {
-        if (this.hasIntent) {
-            // Use the cached token
-            return this.intent;
+    infertIntentForQuery = async query => {
+        if (!query) return null;
+
+        // Cache the latest query
+        this.latestQuery = query;
+
+        // TODO: Infer the intent using Wit.ai
+        if (query.includes('your name')) {
+            this.intent = 'Introduction';
+        } else {
+            this.intent = null;
         }
 
-        // Infer the intent using Wit.ai
-        // const response = await HomeAPI.fetchNewToken(userId);
-        const response = {
-            data: {
-                intent: 'Introduction',
-            },
-        };
+        // Cache the latest intent
+        if (this.intent) this.latestIntent = this.intent;
 
-        const newIntent = response.data.intent;
-        this.setIntent(newIntent);
-        return newIntent;
+        return this.intent;
+    };
+
+    getResponseForIntent = intent => {
+        let res = '';
+
+        if (!intent) return res;
+
+        switch (intent.toLowerCase()) {
+            case 'introduction':
+                res = 'My name is Kyle Nakamura. Pleasure to meet you!';
+                break;
+        }
+
+        // Cache the latest response
+        if (res)
+            this.latestResponse = res;
+
+        return res;
     };
 }
 
