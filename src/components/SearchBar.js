@@ -33,9 +33,7 @@ const SearchBar = observer(props => {
             />
             {AIStore.hasIntent && (
                 <div className='center'>
-                    <label>Intent: {AIStore.intent}</label>
-                    <br />
-                    <label>Response: {AIStore.getResponseForIntent(AIStore.intent)}</label>
+                    <label>{AIStore.getResponseForIntent(AIStore.intent)}</label>
                 </div>
             )}
         </>

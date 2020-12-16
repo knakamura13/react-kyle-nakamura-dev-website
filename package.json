@@ -9,6 +9,7 @@
         "heroku-postbuild": "npm run build"
     },
     "dependencies": {
+        "axios": "^0.21.0",
         "lodash": "^4.17.20",
         "mobx": "^6.0.4",
         "mobx-react-lite": "^3.1.6",
