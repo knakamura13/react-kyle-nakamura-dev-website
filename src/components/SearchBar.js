@@ -1,40 +1,45 @@
 import React from 'react';
+import { debounce } from 'lodash';
+import { observer } from 'mobx-react-lite';
 
-// TODO: Use MobX
-// import RootStore from '../stores/RootStore';
+import RootStore from '../stores/RootStore';
 
 /**
  *  A search bar for AI-type user interaction.
  *
  *  @returns {JSX.Element}
  */
-const SearchBar = props => {
-    // TODO: Use MobX
-    // const { AIStore } = RootStore;
+const SearchBar = observer(props => {
+    const { AIStore } = RootStore;
 
-    const handleQueryChange = e => {
-        // Raw text from the text field
+    const handleQueryChange = debounce(e => {
+        // Raw text from the search bar
         const query = e.target.value;
 
-        // Infer the intent of the query
-        // TODO: Use wit.ai to infer the intent
-        if (query.includes('your name')) {
-            // TODO: Use MobX to store the intent
-            //AIStore.setIntent('Introduction');
-        }
-    };
+        AIStore.infertIntentForQuery(query).catch(err => {
+            console.log(err);
+        });
+    }, 500);
 
     return (
-        <input
-            className='component'
-            id='search-bar'
-            // TODO: Use MobX `AIStore.intent` instead of `true`/`false`
-            style={{ top: true ? '20%' : '50%' }} // position (top) changes when intent is set
-            placeholder={props.placeholder}
-            autoComplete='off'
-            onChange={e => handleQueryChange(e)}
-        />
+        <>
+            <input
+                className='component'
+                id='search-bar'
+                style={{ top: AIStore.hasIntent ? '25%' : '50%' }} // position (top) changes when intent is set
+                placeholder={props.placeholder}
+                autoComplete='off'
+                onChange={e => handleQueryChange(e)}
+            />
+            {AIStore.hasIntent && (
+                <div className='center'>
+                    <label>Intent: {AIStore.intent}</label>
+                    <br />
+                    <label>Response: {AIStore.getResponseForIntent(AIStore.intent)}</label>
+                </div>
+            )}
+        </>
     );
-};
+});
 
 export default SearchBar;

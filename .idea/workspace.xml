@@ -29,14 +29,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="617c3da1-efba-468e-8f4d-a1da5d309e4f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/AIStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/RootStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jZj4CKeF6FFSCEkmeW4bFznvOB" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -58,6 +57,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -69,6 +69,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/screens" />
       <recent name="$PROJECT_DIR$" />
@@ -87,7 +90,7 @@
       <workItem from="1604566082722" duration="7225000" />
       <workItem from="1604656943614" duration="1538000" />
       <workItem from="1607723466204" duration="16638000" />
-      <workItem from="1608029606224" duration="1791000" />
+      <workItem from="1608029606224" duration="3934000" />
     </task>
     <servers />
   </component>
@@ -110,10 +113,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1443" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608005714029">
+    <state x="1443" y="358" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608033166912">
       <screen x="0" y="25" width="2560" height="1055" />
     </state>
-    <state x="1443" y="358" key="#com.intellij.fileTypes.FileTypeChooser/0.25.2560.1055@0.25.2560.1055" timestamp="1608005714029" />
+    <state x="1443" y="358" key="#com.intellij.fileTypes.FileTypeChooser/0.25.2560.1055@0.25.2560.1055" timestamp="1608033166912" />
+    <state x="1445" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608033555728">
+      <screen x="0" y="25" width="2560" height="1055" />
+    </state>
+    <state x="1445" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.25.2560.1055@0.25.2560.1055" timestamp="1608033555728" />
     <state x="492" y="310" key="EditFileWatcherDialog" timestamp="1604018629764">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -150,10 +157,11 @@
       <screen x="0" y="25" width="2560" height="1055" />
     </state>
     <state x="1513" y="470" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.2560.1055@0.25.2560.1055" timestamp="1608001492014" />
-    <state x="541" y="157" width="598" height="735" key="find.popup" timestamp="1604568100826">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="824" y="183" width="912" height="739" key="find.popup" timestamp="1608032827638">
+      <screen x="0" y="25" width="2560" height="1055" />
     </state>
     <state x="541" y="157" width="598" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1604568100826" />
+    <state x="824" y="183" width="912" height="739" key="find.popup/0.25.2560.1055@0.25.2560.1055" timestamp="1608032827638" />
     <state x="640" y="390" key="scopes" timestamp="1604018796379">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
