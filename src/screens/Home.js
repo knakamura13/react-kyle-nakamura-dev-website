@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SearchBar, NavBar, HeaderName } from '../components';
+import { SearchBar, NavBar, HeaderMyName } from '../components';
 
 /****************
  Component Class
@@ -14,7 +14,7 @@ import { SearchBar, NavBar, HeaderName } from '../components';
 const Home = () => {
     return (
         <div className='component' id='home'>
-            <HeaderName />
+            <HeaderMyName />
 
             <NavBar />
 
